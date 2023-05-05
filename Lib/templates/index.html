@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Competitor List</title>
+</head>
+<body>
+    <h1>Run Competitor List</h1>
+    <form action="/" method="post">
+        <label for="input">Enter the competitor list you want to run and see:</label>
+        <input type="text" id="input" name="input">
+        <button type="submit">Submit</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    {% if output %}
+    <pre>{{ output }}</pre>
+    {% endif %}
+
+</body>
+</html>
+
+
+
