@@ -19,11 +19,11 @@ from selenium.webdriver.support import expected_conditions as EC
 Website_links = ['https://www.avira.com/en/buy-antivirus', 'https://www.avira.com/fr/buy-antivirus',
                  'https://www.avira.com/de/buy-antivirus']
 Website_Location = ['USA', 'France','Germany']
-#option = Options()
-chrome_options = webdriver.ChromeOptions()
-chrome_options.binary_location = '/usr/bin/google-chrome'
-driver = webdriver.Chrome(executable_path='D:\competitor_intelligence_EVS_1\chromedriver.exe', chrome_options=chrome_options)
-#driver = webdriver.Chrome(options=option, executable_path="D:\selenium_automation\chromedriver.exe")
+option = Options()
+#chrome_options = webdriver.ChromeOptions()
+#chrome_options.binary_location = 'C:\Program Files (x86)\Google\Chrome\Application'
+#driver = webdriver.Chrome(executable_path='D:\competitor_intelligence_EVS_1\chromedriver.exe', chrome_options=chrome_options)
+driver = webdriver.Chrome(options=option, executable_path="D:\competitor_intelligence_EVS_1\chromedriver.exe")
 driver.maximize_window()
 title = []
 current_price = []
